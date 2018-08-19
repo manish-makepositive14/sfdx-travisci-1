@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<response xmlns:ResponsedoPosts="http://soap.sforce.com/schemas/class/VA_AccountStatementController" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <ResponsedoPosts:lstResponsedoPost>
+        <ResponsedoPosts:Id>A-004624</ResponsedoPosts:Id>
+        <ResponsedoPosts:Message>REQUIRED_FIELD_MISSING: Required fields are missing: [VA_Account__c]</ResponsedoPosts:Message>
+        <ResponsedoPosts:Status>FAILED</ResponsedoPosts:Status>
+    </ResponsedoPosts:lstResponsedoPost>
+    <ResponsedoPosts:lstResponsedoPost>
+        <ResponsedoPosts:Id>A-000172</ResponsedoPosts:Id>
+        <ResponsedoPosts:Message>Record Created Successfully.</ResponsedoPosts:Message>
+        <ResponsedoPosts:Status>SUCCESS</ResponsedoPosts:Status>
+    </ResponsedoPosts:lstResponsedoPost>
+</response>
+</response>
