@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<response xmlns:StatementResponses="http://soap.sforce.com/schemas/class/VA_DatabaseUtility">
-    <StatementResponses:lstStatementResponse>
-        <StatementResponses:Id>528352.0</StatementResponses:Id>
-        <StatementResponses:Message>Successfully Record Created</StatementResponses:Message>
-        <StatementResponses:status>SUCCESS</StatementResponses:status>
-    </StatementResponses:lstStatementResponse>
-</response>

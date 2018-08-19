@@ -4,6 +4,8 @@ cache: false
 env:
 - URL=https://developer.salesforce.com/media/salesforce-cli/sfdx-linux-amd64.tar.xz
 before_install:
+- echo $encrypted_21509b2fb3f6_key
+- echo $encrypted_21509b2fb3f6_iv
 - openssl aes-256-cbc -K $encrypted_21509b2fb3f6_key -iv $encrypted_21509b2fb3f6_iv
   -in assets/server.key.enc -out assets/server.key -d
 - export SFDX_AUTOUPDATE_DISABLE=false
@@ -17,8 +19,9 @@ before_install:
 - export PATH=./sfdx/$(pwd):$PATH
 - sfdx --version
 - sfdx plugins --core
-- sfdx force:auth:jwt:grant --clientid 3MVG9YDQS5WtC11pMvfWPF2lzAAGxux_uv2Iop9Ftc1Dw7B_CcVIXexZXKAtaVCfogn7TXm8pnyCZ2C8mTHjx --jwtkeyfile assets/server.key
-  --username manishc@saasfocus.com --setdefaultdevhubusername -a HubOrg
+- sfdx force:auth:jwt:grant --clientid 3MVG9YDQS5WtC11pMvfWPF2lzAAGxux_uv2Iop9Ftc1Dw7B_CcVIXexZXKAtaVCfogn7TXm8pnyCZ2C8mTHjx
+  --jwtkeyfile assets/server.key --username manishc@saasfocus.com --setdefaultdevhubusername
+  -a HubOrg
 script:
 - sfdx force:org:create -v HubOrg -s -f config/project-scratch-def.json -a ciorg --wait
   2
