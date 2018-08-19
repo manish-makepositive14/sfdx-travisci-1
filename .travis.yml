@@ -6,8 +6,7 @@ env:
 before_install:
 - echo $encrypted_21509b2fb3f6_key
 - echo $encrypted_21509b2fb3f6_iv
-- openssl aes-256-cbc -K $encrypted_21509b2fb3f6_key -iv $encrypted_21509b2fb3f6_iv
-  -in assets/server.key.enc -out assets/server.key -d
+- openssl aes-256-cbc -K MIICTAIBAAJ+AMc1p1M/NlevFo7DQy8aJyA99ThallM9ikarDdJJOGZTkd5HUWlOoh55ZZstgRvHbdK2VhgWUxKMfTt7Ky3PR18IARoGmGAgDNqJ6nezKt6oAHtXEa3770VRqerhfY7n5jSmdEaHoY9BAiXDLOq25dKYoSFXIuLEN/n/VnfLAgMBAAECfSktmw/nMil/5M7P6BRVeJ7+j7D9cLN2Nh4Tf8DnJ8RnI/DplxeIjJR2DZ29E0IVwErdLADApJ1h8wUXmb5XY5ilDPUyeCvuo+Zfl8WcOnauvCZ+UgZFxkNBwGWHpVujUckR2ttHHcEuhO/TB3GXB3TPsoDS0JkofvsXsC9hAj8OH8THXez+ztX4DIKE8liUkLbGQl5gCOfFyNQtP233HlUn9F7QzhtRQo5av9XH7Ep67UxfN0+RZcbBpA3/4VECPw4arzFNTDzBhL3DoEp00Z54P9LtINJdEMAddL6AjctaNH62ISCkjGtazxKwlzfku7pmLHdrzzCo3hce4fNgWwI/AV5kxGk+wUasB5i2wUl2+ha4D6h42teiFlGq9iOSdYMz/2Y4FgYTMaHAh9zVS8WDRjxezU9f35g8VaGfVa+xAj8Eaz3ab4JkQqlJHyJ4UXNfeANfHWY8ImZeGpx6FyLVxHRQAtYMOSG5fOEF1Qf7vhFHDD4ASGnIsA+tJMLcEqMCPwnlCA3/9b7zPEuVB9+nc5n5AibzhyPFh8Inzost3+3DzRlKke0bbsVSLx7tq0jwzHRJJM+Rvjjx31vCyt+6jA== -in assets/server.key.enc -out assets/server.key -d
 - export SFDX_AUTOUPDATE_DISABLE=false
 - export SFDX_USE_GENERIC_UNIX_KEYCHAIN=true
 - export SFDX_DOMAIN_RETRY=300
